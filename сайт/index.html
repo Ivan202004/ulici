@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>старинные улицы Пятигорска</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .piggy {
+      width: 300px;
+      height: 300px;
+      margin: 10px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      border: 5px solid #f2f2f2;
+    }
+
+    .piggy img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+
+    .piggy:hover img {
+      transform: scale(1.2);
+    }
+
+    .button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: none;
+    }
+
+    .piggy:hover .button {
+      display: block;
+    }
+
+    .background-img {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <img src="img/background.jpg" alt="Фон" class="background-img">
+
+  <div class="container">
+    <div class="piggy">
+      <img src="img/Дунаевского.jpg" alt="Дунаевского">
+      <button class="button" onclick="location.href='ulki/Дунаевского.html'">Перейти</button>
+    </div>
+    <div class="piggy">
+      <img src="img/Дзержинского.jpg" alt="Дзержинского ">
+      <button class="button" onclick="location.href='ulki/Дзержинского.html'">Перейти</button>
+    </div>
+    <div class="piggy">
+      <img src="img/Университетская.jpg" alt="Университетская ">
+      <button class="button" onclick="location.href='ulki/Университетская.html'">Перейти</button>
+    </div>
+    <div class="piggy">
+      <img src="img/40_лет_Октября.jpg" alt="Проспект 40 лет Октября ">
+      <button class="button" onclick="location.href='ulki/40_лет_Октября.html'">Перейти</button>
+    </div>
+    <div class="piggy">
+      <img src="img/Карла-Маркса.jpg" alt="Карла Маркса">
+      <button class="button" onclick="location.href='ulki/Карла-Маркса.html'">Перейти</button>
+    </div>
+    <div class="piggy">
+      <img src="img/Соборная.jpg" alt="Соборная">
+      <button class="button" onclick="location.href='ulki/Соборная.html'">Перейти</button>
+    </div>
+    <div class="piggy">
+      <img src="img/Власова.jpg" alt="Власова">
+      <button class="button" onclick="location.href='ulki/Власова.html'">Перейти</button>
+    </div>
+    <div class="piggy">
+      <img src="img/Кирова.jpg" alt="Церковная ">
+      <button class="button" onclick="location.href='ulki/Церковная.html'">Перейти</button>
+    </div>
+    <div class="piggy">
+      <img src="img/Анисимова.jpg" alt="Анисимова">
+      <button class="button" onclick="location.href='ulki/Анисимова.html'">Перейти</button>
+    </div>
+  </div>
+
+</body>
+
+</html>

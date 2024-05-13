@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-image: url('img/снимок7.jpg'); /* Путь к вашей картине заднего фона */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: screen; /* Применяем смешивание с фоном, чтобы черный стал прозрачным */
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent); /* Градиентный фон от черного к прозрачному слева направо */
+}
+
+.content {
+    flex: 1;
+    color: white; /* Цвет текста */
+    padding: 20px;
+}
